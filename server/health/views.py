@@ -1,21 +1,10 @@
 from rest_framework.permissions import AllowAny
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from rest_framework import status
-from .models import Health
 from .serializers import HealthSerializer
-from rest_framework.views import APIView
 from rest_framework.response import Response
-import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from rest_framework.views import APIView
-from rest_framework.response import Response
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
-from rest_framework.views import APIView
-from rest_framework.response import Response
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 
 class PredictObesity(APIView):
     permission_classes = [AllowAny]
